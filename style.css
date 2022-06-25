@@ -1,0 +1,569 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+}
+
+/* ________________header designing_____________________________________________ */
+
+/* background of header  */
+.header{
+    margin-top: -17px;
+    height: 65vh;
+    width: 100vw;
+    background-image: url("images/macbook_mouse.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ /* this is the main navigation bar */
+
+.horizontal-list{
+    margin-left: 0px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.horizontal-list a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.horizontal-list a:hover{
+    text-decoration: underline;
+    color:rgb(152, 139, 139);
+    transition: text-decoration 5s , color 0.5s;
+}
+
+/* my name  */
+#my-name{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    width: 100vw;
+    margin-top: 8%;
+    font-weight: bolder;
+}
+
+/* my photo  */
+#my-photo{
+    height:200px;
+    width:200px;
+    background-image: url("images/my_image.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: -100px;
+}
+
+/* _____________________ the SECTIONS start from here ______________________________________________ */
+
+
+section:nth-child(2n+1) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n) {
+    background-color: rgba(255, 255, 255, 0.756);
+}
+
+
+.section-heading{
+    font-size: 40px;
+    text-align: center;
+    /* padding-top:10px; */
+    margin-top: -10px;
+    color:rgb(7, 7, 139)
+}
+
+
+/* the about section  */
+#about{
+    height: 200px;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+#about p{
+    height: 100%;
+    width:80%;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* _____________________________________the skills section ____________________________________________________________________________ */
+
+#skills{
+    height:450px;
+    width: 100vw;  
+    position: relative; 
+    padding-top: 25px;
+}
+
+#side-annimation{                               /* this is the certificate annimation */
+    position: absolute;
+    width: 10%;
+    height: auto;
+    top: 33%;
+    transform: rotate(-90deg);
+    background-color: #241d1d86;
+    padding: 100px 0px 20px 20px;
+    margin-left: -70px;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+#side-annimation a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.755);
+}
+ 
+#light-bulb{                                    /* this is the certificate annimation */
+    height: 0;
+    width: 0;
+    position: fixed;
+    top: 30%;
+    overflow: hidden;
+}
+
+
+ #light-bulb:target{                          /* this is the certificate annimation */
+    height: 70vh;
+    width: 85vw;
+    top: 20%;
+    left: 7%;
+    border: 1px solid black;
+    background-color: lightgrey;
+    transition: all 1s;
+    z-index: 5;
+}
+
+#light-bulb header{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+#certificates{
+    margin-top: 35px;
+}
+
+#certificates li{
+    margin: 15px;
+    font-size: 20px;
+    padding-left: 10px;
+    
+}
+
+.container{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    /* margin-top: 100px; */
+    position: relative;                              
+    top: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.skill-display{
+    width:25%;
+    height: 10%;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: rgba(145, 136, 136, 0.448);
+    box-shadow: 4px 3px 4px 3px rgb(85, 84, 84);
+}
+
+#skill-color1{    /* c++ */
+    background-color: rgb(15, 15, 160);
+    width: 85%;
+    height:100%;
+    border-radius: 50px 0px 0px 50px;
+} 
+
+#skill-color2{ /* c */
+    background-color: rgb(221, 13, 13);
+    width: 75%;
+    height:100%;
+    border-radius: 50px 0px 0px 50px;
+}
+
+#skill-color3{ /* HTML */
+    background-color: rgb(167, 25, 167);
+    width: 65%;
+    height:100%;
+    border-radius: 50px 0px 0px 50px;
+}
+
+#skill-color4{ /* css */
+    background-color: rgb(212, 156, 14);
+    width: 60%;
+    height:100%;
+    border-radius: 50px 0px 0px 50px;
+}
+
+#skill-color5{ /* Javascript */
+    background-color: orangered;
+    width: 40%;
+    height:100%;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.skill-display span{
+    width:100%;
+    color: white;
+    margin-left: 30px;
+    line-height: 30px;
+    
+}
+
+/* _____________________________________the education section ____________________________________________________________________________ */
+
+#education{
+    height: 860px;
+    width: 100vw;
+    position: relative;
+}
+
+.container2{
+    height: 80%;
+    width: 65%;
+    margin: auto;
+    margin-top: 85px;
+}
+
+.box{
+    position: relative;
+    height: 30%;
+    width: 35%;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.745);
+    box-shadow: 4px 4px 4px 4px lightgrey;
+}
+
+.box:nth-child(2n+1){
+    position:relative;
+    left:53%;
+}
+
+.box:nth-child(2n){
+    position: relative;
+    left: 10%;
+}
+
+.divider{
+    position: absolute;
+    top: 20%;
+    left:50%;
+    width: 0px;
+    height: 55%;
+    border-left: 2px dashed rgb(9, 4, 18);
+}
+
+.aeroplane{
+    position: sticky;
+    font-size: 40px;
+    top: 30%;
+    transform: rotate(90deg);
+    color:rgb(3, 3, 32);
+    margin-left: -4px;
+}
+
+.box header{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 25px;
+
+}
+
+.box header span{
+    font-size: 12px;
+}
+
+.box main{
+    text-align: right;
+    margin: 30px 5px 5px 5px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.box footer{
+    text-align: right;
+    margin: 10px 30px 5px 5px;
+    font-size: 15px;
+    padding: 5px;
+
+}
+
+.school-logo{
+    position: absolute;
+    height: 40%;
+    width: 25%;
+    top: 37%;
+    left: 0%;
+    padding: 5px;
+
+    background-image: url(images/N.-K.-Bagrodia-Public-School-Dwarka-Delhi.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.college-logo{
+    position: absolute;
+    height: 40%;
+    width: 25%;
+    top: 40%;
+    left: 0%;
+
+    background-image: url("images/DTU.png");
+    background-size: contain;
+    background-position: center;  
+    background-repeat: no-repeat;
+
+}
+
+
+/* _____________________________________the experience section ____________________________________________________________________________ */
+
+#experience{
+    height: 1000px;
+    width: 100vw;
+    position: relative;
+    padding-top:25px;
+}
+
+.container3{
+    height: 80%;
+    width: 65%;
+    margin: auto;
+    position: relative;
+    top: 5%;
+}
+
+.work{
+    position: relative;
+    height: 30%;
+    width: 35%;
+    margin: 5px;
+
+    box-shadow: 5px 5px 5px 5px rgb(160, 159, 159);
+}
+
+.work:nth-child(2n+1){
+    position:relative;
+    left:55%;
+}
+
+.work:nth-child(2n){
+    position: relative;
+    left: 10%;
+}
+
+.divider2{
+    position: absolute;
+    width: 0px;
+    height: 75%;
+    border-left: 2px dashed black;
+    left: 50%;
+    top: 10%;
+}
+
+.divider2 i{
+    font-size: 40px;
+    position: sticky;
+    top:30%;
+    transform: rotate(90deg);
+    margin-left: -10px;
+    color:rgb(3, 3, 32);
+}
+
+.work header{
+    margin: 25px 5px 5px 5px;
+    font-size:25px;
+    padding-top: 15px;
+}
+
+.work main{
+    text-align: right;
+    margin: 15px 5px 5px 5px;
+    font-size: 20px;
+}
+
+.work footer{
+    text-align: right;
+    font-size: 15px;
+    margin: 10px 0px 5px 5px;
+    position: relative;
+    top: 5%;
+    padding: 5px;
+
+}
+
+.yuvaan-logo{
+    position: absolute;
+    height: 45%;
+    width: 27%;
+    top: 35%;
+    left: 2%;
+
+    background-image: url("images/yuvaan-logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;;
+}
+
+.mentor-logo{
+    position: absolute;
+    height: 45%;
+    width: 27%;
+    top: 25%;
+    left: 2%;
+
+    background-image: url("images/mentor-logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+/* _____________________________________the  contact section ____________________________________________________________________________ */
+
+#contact{
+    width: 100vw;
+    height: 500px;
+    background: linear-gradient(to top right, rgb(35, 35, 176),rgb(52, 3, 52) );
+}
+
+.contact-heading{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+
+.container4{
+    height: 80%;
+    width: 55%;
+    margin: auto;
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.contact-box1{
+    height: 95%;
+    width: 45%;
+    position: relative;
+
+}
+
+.contact-box2{
+    /* border: 2px solid black; */
+    height: 90%;
+    width: 35%;
+
+}
+
+
+.contact-box2 header{
+    font-size: 25px;
+    color: white;
+}
+
+.contact-box2 main{
+    color: white;
+    font-size: 15px;
+    padding: 10px 0px 10px 0px;
+}                                     /* rest css regarding contact box 2 is done on html page itself */
+
+
+#input-name{
+    display: inline-block;
+    height: 60%;
+    width: 70%;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 15px;
+    margin: 15px;
+
+    color: white;
+}
+
+#input-email{
+    display: inline-block;
+    height: 60%;
+    width: 70%;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 15px;
+    margin: 15px;
+
+    color: white;
+
+}
+
+#input-message{
+    display: inline-block;
+    height: 70%;
+    width: 70%;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 15px 15px 30px 15px;
+    margin: 15px;
+
+    color: white;
+
+}
+
+#submit-button{
+    display: block;
+    margin: 13px 10px 10px 62%;
+    padding: 5px;
+    border-radius: 5px;
+    height: 5%;
+    width: 20%;
+    cursor: pointer;
+    
+}
+
+#submit-button:hover{
+    color: red;
+}
+
+::placeholder{
+    color: white;
+}
+
+
+
+/* ___________________________________________________END____________________________________________________________________________________ */
